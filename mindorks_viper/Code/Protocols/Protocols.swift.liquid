@@ -1,0 +1,52 @@
+//
+//  {{ prefix }}{{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+
+protocol {{ module_info.name }}ViewProtocol: class {
+    var presenter: {{ module_info.name }}PresenterProtocol? { get set }
+}
+
+protocol {{ module_info.name }}WireFrameProtocol: class {
+    static func create{{ module_info.name }}Module() -> UIViewController
+}
+
+protocol {{ module_info.name }}PresenterProtocol: class {
+    var view: {{ module_info.name }}ViewProtocol? { get set }
+    var interactor: {{ module_info.name }}InteractorInputProtocol? { get set }
+    var wireFrame: {{ module_info.name }}WireFrameProtocol? { get set }
+    
+    // VIEW -> PRESENTER
+    func viewDidLoad()
+}
+
+protocol {{ module_info.name }}InteractorOutputProtocol: class {
+}
+
+protocol {{ module_info.name }}InteractorInputProtocol: class {
+    var presenter: {{ module_info.name }}InteractorOutputProtocol? { get set }
+    var localDatamanager: {{ module_info.name }}LocalDataManagerInputProtocol? { get set }
+    var remoteDatamanager: {{ module_info.name }}RemoteDataManagerInputProtocol? { get set }
+}
+
+protocol {{ module_info.name }}DataManagerInputProtocol: class {
+    // INTERACTOR -> DATAMANAGER
+}
+
+protocol {{ module_info.name }}RemoteDataManagerInputProtocol: class {
+    var remoteRequestHandler: {{ module_info.name }}RemoteDataManagerOutputProtocol? { get set }
+}
+
+protocol {{ module_info.name }}RemoteDataManagerOutputProtocol: class {
+    // REMOTEDATAMANAGER -> INTERACTOR
+
+}
+
+protocol {{ module_info.name }}LocalDataManagerInputProtocol: class {
+     // INTERACTOR -> LOCALDATAMANAGER
+}

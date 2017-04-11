@@ -1,0 +1,34 @@
+# Template information section
+name: mindorks_viper
+summary: Creates module based on Mindorks' implementation of VIPER
+author: max.rozdobudko@gmail.com
+version: 1.0.0
+license: MIT
+
+# The declarations for code files
+code_files:
+
+## View Layer
+- {name: View/View.swift, path: Code/View/View.swift.liquid}
+
+## Interactor Layer
+- {name: Interactor/Interactor.swift, path: Code/Interactor/Interactor.swift.liquid}
+
+## Presenter Layer
+- {name: Presenter/Presenter.swift, path: Code/Presenter/Presenter.swift.liquid}
+
+## Entity Layer
+- {name: DataManager/Local/LocalDataManager.swift, path: Code/DataManager/Local/LocalDataManager.swift.liquid}
+- {name: DataManager/Remote/RemoteDataManager.swift, path: Code/DataManager/Remote/RemoteDataManager.swift.liquid}
+
+## Router Layer
+- {name: WireFrame/WireFrame.swift, path: Code/WireFrame/WireFrame.swift.liquid}
+
+## Protocols
+- {name: Protocols/Protocols.swift, path: Code/Protocols/Protocols.swift.liquid}
+
+# The declarations for test files
+test_files:
+
+# Template dependencies
+dependencies:
