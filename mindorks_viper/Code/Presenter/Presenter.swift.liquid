@@ -7,9 +7,9 @@
 //
 
 class {{ module_info.name }}Presenter: {{ module_info.name }}PresenterProtocol {
-    weak var view: {{ module_info.name }}ViewProtocol?
-    var interactor: {{ module_info.name }}InteractorInputProtocol?
-    var wireFrame: {{ module_info.name }}WireFrameProtocol?
+    weak var view: {{ module_info.name }}ViewProtocol!
+    var interactor: {{ module_info.name }}InteractorInputProtocol!
+    var wireFrame: {{ module_info.name }}WireFrameProtocol!
     
     func viewDidLoad() {
         

@@ -10,6 +10,7 @@ code_files:
 
 ## View Layer
 - {name: View/View.swift, path: Code/View/View.swift.liquid}
+- {name: View/DisplayData/DisplayData.swift, path: Code/View/DisplayData/DisplayData.swift.liquid}
 
 ## Interactor Layer
 - {name: Interactor/Interactor.swift, path: Code/Interactor/Interactor.swift.liquid}
@@ -18,8 +19,6 @@ code_files:
 - {name: Presenter/Presenter.swift, path: Code/Presenter/Presenter.swift.liquid}
 
 ## Entity Layer
-- {name: DataManager/Local/LocalDataManager.swift, path: Code/DataManager/Local/LocalDataManager.swift.liquid}
-- {name: DataManager/Remote/RemoteDataManager.swift, path: Code/DataManager/Remote/RemoteDataManager.swift.liquid}
 
 ## Router Layer
 - {name: WireFrame/WireFrame.swift, path: Code/WireFrame/WireFrame.swift.liquid}
