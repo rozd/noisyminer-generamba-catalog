@@ -11,7 +11,7 @@ import UIKit
 class {{ module_info.name }}WireFrame: {{ module_info.name }}WireFrameProtocol {
     
     fileprivate class func setupView(view: {{ module_info.name }}View) {
-    	let displayData = {{ module_info.name }}DisplayData()
+    	let displayData = {{ module_info.name }}DisplayDataManager()
         let presenter: {{ module_info.name }}PresenterProtocol & {{ module_info.name }}InteractorOutputProtocol = {{ module_info.name }}Presenter()
         let interactor: {{ module_info.name }}InteractorInputProtocol = {{ module_info.name }}Interactor()
         let wireFrame: {{ module_info.name }}WireFrameProtocol = {{ module_info.name }}WireFrame()

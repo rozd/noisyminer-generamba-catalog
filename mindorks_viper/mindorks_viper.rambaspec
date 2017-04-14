@@ -8,9 +8,12 @@ license: MIT
 # The declarations for code files
 code_files:
 
+## Storyboard
+- {name: Storyboard/.storyboard, path: Code/Storyboard/Storyboard.storyboard.liquid}
+
 ## View Layer
 - {name: View/View.swift, path: Code/View/View.swift.liquid}
-- {name: View/DisplayData/DisplayData.swift, path: Code/View/DisplayData/DisplayData.swift.liquid}
+- {name: View/DisplayData/DisplayDataManager.swift, path: Code/View/DisplayData/DisplayDataManager.swift.liquid}
 
 ## Interactor Layer
 - {name: Interactor/Interactor.swift, path: Code/Interactor/Interactor.swift.liquid}

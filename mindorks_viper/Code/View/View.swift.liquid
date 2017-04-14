@@ -11,11 +11,11 @@ import UIKit
 class {{ module_info.name }}View: UIViewController {
     
     var presenter: {{ module_info.name }}PresenterProtocol!
-    var displayData: {{ module_info.name }}DisplayData!
+    var displayData: {{ module_info.name }}DisplayDataManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter?.viewDidLoad()
+        presenter.viewDidLoad()
     }
 }
 
